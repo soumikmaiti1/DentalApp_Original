@@ -1,0 +1,44 @@
+<!--
+  Generated template for the RegistrationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header >
+
+  <ion-navbar color="primary">
+    <ion-title>Create an account</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding >
+  <ion-item >
+    <ion-label floating style="color:#8EE5DE;"><ion-icon item-left class="ioconcc" name="person" style="color:#000;"> </ion-icon>Username</ion-label>
+    <ion-input style="color:#000;" [(ngModel)]="name"></ion-input>
+  </ion-item>
+    
+  <ion-item >
+    <ion-label floating style="color:#8EE5DE;"><ion-icon item-left class="ioconcc" name="mail" style="color:#000;"> </ion-icon>Email</ion-label>
+    <ion-input type="email" style="color:#000;" [(ngModel)]="email"></ion-input>
+  </ion-item>
+  <ion-item >
+    <ion-label floating style="color:#8EE5DE;"><ion-icon item-left class="ioconcc" name="ios-information-circle-outline" style="color:#000;"> </ion-icon>Stream</ion-label>
+    <ion-input style="color:#000;" [(ngModel)]="stream"></ion-input>
+  </ion-item>
+  <ion-item >
+    <ion-label floating style="color:#8EE5DE;"><ion-icon item-left class="ioconcc" name="ios-information-circle-outline" style="color:#000;"> </ion-icon>Address</ion-label>
+    <ion-input  style="color:#000;" [(ngModel)]="address"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating style="color:#8EE5DE;"><ion-icon name="phone-portrait" item-left class="ioconcc" style="color:#000;"></ion-icon>Phone</ion-label>
+    <ion-input type="tel" style="color:#000;" [(ngModel)]="mobile"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating style="color:#8EE5DE;"><ion-icon item-left class="ioconcc" name="lock" style="color:#000;"> </ion-icon>Password</ion-label>
+    <ion-input type="password" style="color:#000;" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <button ion-button class="reg-btn" (click)="registerUser()">Create account</button>
+ 
+</ion-content>

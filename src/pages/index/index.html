@@ -1,0 +1,45 @@
+<ion-header>
+
+  <ion-navbar style="display:none;">
+    <ion-title>index</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <h1 class="h2">Login</h1>
+  <div id="loginForm">
+    <ion-item>
+      <ion-input type="email" placeholder="Your email" id="emailInput"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Pasword" id="passInput"></ion-input>
+    </ion-item>
+  </div>
+  <div class="forgot">
+      <div class="login-para">
+      <p><a href="#"> Forgot Password? </a></p>
+     </div>
+   <div class="clear"> </div>
+ </div>
+ <button ion-button class="signbtn" (click)="signin()">Sign in</button>
+
+
+ 
+  <button ion-button color="primary" (click)="FBlogin()" class="loginBtn loginBtn--facebook">
+    Connect with Facebook
+  </button>
+
+  <button class="loginBtn loginBtn--google" (click)="GPlogin()">
+    Login with Google
+  </button>
+
+ 
+  
+  <button class="Create-btn" (click)="signup()">Create Account</button>
+
+  <h1 class="h1">By Joining you agree to</h1>
+  <h1 class="h1-a">Terms of Use and Privacy Policy</h1>
+
+
+</ion-content>
